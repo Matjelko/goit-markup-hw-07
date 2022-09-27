@@ -1,0 +1,113 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color-lightgrey);
+    border-top: 1px solid var(--border-color-transparent);
+    border-left: 1px solid var(--border-color-transparent);
+    border-right: 1px solid var(--border-color-transparent);
+    background-clip: border-box;
+
+    &__container-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1200px;
+
+        &--left{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__padding{
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+
+    &__navigation{
+        margin-left: 77px;
+    }
+
+    &__link{
+        display: inline-flex;
+        color: var(--text-color-black);
+        font-size: 14px;
+        line-height: 1.4;
+        font-weight: 500;
+        text-decoration: none;
+        letter-spacing: 0.02em;
+        padding: 12px;
+        margin: 0 4px;
+        transition: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover{
+            color: var(--hover-color);
+        }
+
+        &--current{
+            position: relative;
+
+            &::after{
+                position: absolute;
+                top: 59px;
+                content: '';
+                border-radius: 2px;
+                width: 54px;
+                height: 4px;
+                background-color: var(--hover-color);
+            }
+        }
+        &--backlight{
+            color: var(--hover-color);
+        }
+
+        &--studio{
+            font-size: 26px;
+            line-height: 1.2;
+            font-weight: 700;
+            text-decoration: none;
+            letter-spacing: 0.03em;
+            font-family: 'Raleway', sans-serif;
+            letter-spacing: 0.03em;
+
+            &-black{
+                color: var(--text-color-black);
+            }
+        }
+
+        &--web{
+            color: var(--hover-color);
+        }
+
+        &-second{
+            color: var( --text-color-main);
+            font-size: 14px;
+            line-height: 1.1;
+            font-weight: 500;
+            text-decoration: none;
+            letter-spacing: 0.02em;
+            padding-right: 50px;
+        }
+    }
+
+    &__icon-contact{
+        fill: var(--text-color-main);
+
+        &:hover{
+            cursor: pointer;
+            fill: var(--hover-color);
+            transition: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    &__icon-contact:hover{
+        .header__link-second{
+            color: var(--hover-color);
+            transition: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+}
