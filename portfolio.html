@@ -40,18 +40,20 @@
     </header>
 
     <main>
-        <div class="box-flex">
-            <nav class="menu__container-nav">
-                <button type="button" class="menu__btn menu__btn--margin">Wszystkie</button>
-                <button type="button" class="menu__btn-second menu__btn--margin">Strony</button>
-                <button type="button" class="menu__btn menu__btn--margin">Aplikacje</button>
-                <button type="button" class="menu__btn-second menu__btn--margin">Dizajn</button>
-                <button type="button" class="menu__btn">Marketing</button>
-            </nav>
-        </div>
+        <section class="menu">
+            <div class="box-flex">
+                <nav class="menu__container-nav">
+                    <button type="button" class="menu__btn menu__btn--margin">Wszystkie</button>
+                    <button type="button" class="menu__btn-second menu__btn--margin">Strony</button>
+                    <button type="button" class="menu__btn menu__btn--margin">Aplikacje</button>
+                    <button type="button" class="menu__btn-second menu__btn--margin">Dizajn</button>
+                    <button type="button" class="menu__btn">Marketing</button>
+                </nav>
+            </div>
+        </section>
 
         <div class="grid">
-            <section class="grid__images-mash">
+            <section class="grid__container">
                 <figure class="grid__figure">
                     <div class="grid__overlay">
                         <div class="grid__overlay--position">
@@ -138,8 +140,8 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__section">
-            <div>
+        <div class="footer__container">
+            <div class="footer__header">
                 <a href="./index.html" class="footer__link--studio"><span class="footer__link--web">Web</span><span class="footer__link--studio-white">Studio</span></a>
                 <address class="footer__address">
                     <span class="footer__street">m. Warszawa, Aleje Jerozolimskie 21</span>
@@ -147,7 +149,7 @@
                     <a href="tel:+48111111111" class="footer__link">+48 111 111 111</a>
                 </address>
             </div>
-            <section class="footer__section--left">
+            <section class="footer__main">
                 <p class="footer__paragraph">DOŁĄCZ DO NAS</p>
                 <svg class="footer__icon" width="44" height="44">
                     <use href="./images/icons.svg#instagram"></use>
@@ -162,8 +164,8 @@
                     <use href="./images/icons.svg#linkedin"></use>
                 </svg>
             </section>
-            <div class="footer__section--left footer__section--top">
-                <form class="footer__section-form">
+            <div class="footer__footer">
+                <form class="footer__form">
                     <label>
                         <span class="footer__paragraph">ZAPISZ SIĘ DO NEWSLETTERA</span>
                         <input type="email" name="email" placeholder="E-mail" class="box-flex footer__input">

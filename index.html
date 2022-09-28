@@ -39,12 +39,12 @@
         </div>
     </header>
 
-    <main class="main-part">
-        <div class="main-part__bckg-color">
-            <div class="main-part__bckg-img">
-                <section class="main-part__section">
-                    <h1 class="main-part__heading">EFEKTYWNE ROZWIĄZANIA <br> DLA WASZEGO BIZNESU</h1>
-                    <button type="button" class="main-part__btn" data-modal-open>Zamów usługę</button>
+    <main>
+        <div class="slider">
+            <div class="slider__container">
+                <section class="slider__header">
+                    <h1 class="slider__heading">EFEKTYWNE ROZWIĄZANIA <br> DLA WASZEGO BIZNESU</h1>
+                    <button type="button" class="slider__btn" data-modal-open>Zamów usługę</button>
                 </section>
             </div>
         </div>
@@ -219,8 +219,8 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__section">
-            <div>
+        <div class="footer__container">
+            <div class="footer__header">
                 <a href="./index.html" class="footer__link--studio"><span class="footer__link--web">Web</span><span class="footer__link--studio-white">Studio</span></a>
                 <address class="footer__address">
                     <span class="footer__street">m. Warszawa, Aleje Jerozolimskie 21</span>
@@ -228,7 +228,7 @@
                     <a href="tel:+48111111111" class="footer__link">+48 111 111 111</a>
                 </address>
             </div>
-            <section class="footer__section--left">
+            <section class="footer__main">
                 <p class="footer__paragraph">DOŁĄCZ DO NAS</p>
                 <svg class="footer__icon" width="44" height="44">
                     <use href="./images/icons.svg#instagram"></use>
@@ -243,8 +243,8 @@
                     <use href="./images/icons.svg#linkedin"></use>
                 </svg>
             </section>
-            <div class="footer__section--left footer__section--top">
-                <form class="footer__section-form">
+            <div class="footer__footer">
+                <form class="footer__form">
                     <label>
                         <span class="footer__paragraph">ZAPISZ SIĘ DO NEWSLETTERA</span>
                         <input type="email" name="email" placeholder="E-mail" class="box-flex footer__input">
@@ -263,43 +263,45 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="modal__btn" data-modal-close>X</button>
-            <h3 class="modal__title">Zostaw swoje dane w formularzu poniżej</h3>
-            <form class="modal__form">
-                <label class="modal__form--active">
-                    <span class="modal__label">Imie</span>
-                    <input type="text" name="name" class="modal__input">
-                    <svg class="modal__icon--person" width="20" height="20">
-                        <use href="./images/icons.svg#person-black"></use>
-                    </svg>
-                </label>
-                <label class="modal__form--active">
-                    <span class="modal__label">Telefon</span>
-                    <input type="text" name="phone-number" class="modal__input">
-                    <svg class="modal__icon--phone" width="20" height="25">
-                        <use href="./images/icons.svg#phone-black"></use>
-                    </svg>
-                </label>
-                <label class="modal__form--active">
-                    <span class="modal__label">Email</span>
-                    <input type="email" name="email" class="modal__input">
-                    <svg class="modal__icon--email" width="20" height="20">
-                        <use href="./images/icons.svg#email"></use>
-                    </svg>
-                </label>
-                
-                <label class="modal__form--active">
-                    <span class="modal__label">Komentarz</span>
-                    <textarea name="feedback" placeholder="Wprowadź tekst" class="modal__textarea"></textarea>
-                </label>
+            <div class="modal__container">
+                <button type="button" class="modal__btn" data-modal-close>X</button>
+                <h3 class="modal__title">Zostaw swoje dane w formularzu poniżej</h3>
+                <form class="modal__form">
+                    <label class="modal__form--active">
+                        <span class="modal__label">Imie</span>
+                        <input type="text" name="name" class="modal__input">
+                        <svg class="modal__icon--person" width="20" height="20">
+                            <use href="./images/icons.svg#person-black"></use>
+                        </svg>
+                    </label>
+                    <label class="modal__form--active">
+                        <span class="modal__label">Telefon</span>
+                        <input type="text" name="phone-number" class="modal__input">
+                        <svg class="modal__icon--phone" width="20" height="25">
+                            <use href="./images/icons.svg#phone-black"></use>
+                        </svg>
+                    </label>
+                    <label class="modal__form--active">
+                        <span class="modal__label">Email</span>
+                        <input type="email" name="email" class="modal__input">
+                        <svg class="modal__icon--email" width="20" height="20">
+                            <use href="./images/icons.svg#email"></use>
+                        </svg>
+                    </label>
+                    
+                    <label class="modal__form--active">
+                        <span class="modal__label">Komentarz</span>
+                        <textarea name="feedback" placeholder="Wprowadź tekst" class="modal__textarea"></textarea>
+                    </label>
 
-                <label class="modal__box-flex">
-                    <input type="checkbox" name="regulations" value="regulations" class="modal__icon--checked">
-                    <p class="modal__statute">Oświadczam iż akceptuję <span class="modal__statute--decoration">Regulamin</span> i <span class="modal__statute--decoration">Politykę Prywatności</span></p>
-                </label>
+                    <label class="modal__box-flex">
+                        <input type="checkbox" name="regulations" value="regulations" class="modal__icon--checked">
+                        <p class="modal__statute">Oświadczam iż akceptuję <span class="modal__statute--decoration">Regulamin</span> i <span class="modal__statute--decoration">Politykę Prywatności</span></p>
+                    </label>
 
-                <button type="submit" class="modal__btn-second">Wyślij</button>
-            </form>
+                    <button type="submit" class="modal__btn-second">Wyślij</button>
+                </form>
+            </div>
         </div>
     </div>
 

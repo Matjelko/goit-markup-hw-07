@@ -4,23 +4,24 @@
     align-items: center;
     background-color: var(--background-color-darkgrey);
 
-    &__section{
+    &__container{
         padding-top: 60px;
         padding-bottom: 60px;
         width: 1200px;
         display: inline-flex;
+    }
 
-        &-form{
-            display: flex;
-        }
+    &__main{
+        margin-left: 72px;
+    }
 
-        &--left{
-            margin-left: 72px;
-        }
+    &__footer{
+        margin-top: 12px;
+        margin-left: 72px;
+    }
 
-        &--top{
-            margin-top: 12px;
-        }
+    &__form{
+        display: flex;
     }
 
     &__link{
@@ -62,17 +63,6 @@
         line-height: 1.7;
         font-style: normal;
         letter-spacing: 0.03em;
-    }
-
-    &__section{
-
-        &--left{
-            margin-left: 72px;
-        }
-
-        &--top{
-            margin-top: 12px;
-        }
     }
 
     &__paragraph{
