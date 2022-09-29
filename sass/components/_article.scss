@@ -1,0 +1,25 @@
+.article{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 94px;
+
+    &__container{
+        @extend .box-flex;
+        @extend .container;
+    }
+
+    &__title{
+        color: var(--text-color-black);
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+
+    &__paragraph{
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+    }
+}

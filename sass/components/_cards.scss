@@ -6,6 +6,10 @@
     padding-bottom: 94px;
     background-color: var(--background-color-lightgrey);
 
+    &__container{
+        @extend .container;
+    }
+
     &__title{
         color: var(--text-color-black);
         font-size: 36px;
